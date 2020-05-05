@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page</title>
+    <style>
+      #header {
+        display: flex;
+        flex-direction: row;
+      }
+      #header-img {
+        width: 250px;
+        height: 31px;
+        position: fixed;
+      }
+      #nav-bar {
+        position: fixed;
+        right: 0;
+        font-size: 17px;
+      }
+      .nav-link {
+        margin: 45px;
+      }
+      #main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+      }
+      #form {
+        margin: 0;
+      }
+      label {
+        font-size: 25px;
+        font-weight: bold;
+        font-style: Times New Roman;
+      }
+      #handcrafted {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0;
+      }
+      #email {
+        padding: 5px;
+        margin: 10px;
+        width: 23%;
+      }
+      #submit {
+        padding: 7px;
+        margin: 10px;
+        width: 15%;
+        font-weight: bold;
+        background-color: #f5f10b;
+        border-color: none;
+      }
+      .grid {
+        display: flex;
+        flex-direction: column;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+      }
+      img {
+        width: 70px;
+        height: 70px;
+        padding: 30px;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-content {
+        font-size: 20px;
+        margin: 0;
+      }
+      iframe {
+        margin: 50px;
+      }
+      #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .price-content {
+        padding: 0;
+        margin: 40px;
+        border: 1px outset #2a1613;
+        width: 260px;
+        text-align: center;
+        height: 320px;
+        font-size: 15px;
+      }
+      .dolar {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .select {
+        border: 1px outset #f5f10b;
+        background-color: #f5f10b;
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
+      }
+      h3 {
+        border: 1px outset #cdc6c5;
+        background-color: #cdc6c5;
+        padding: 13px;
+        margin: 0;
+      }
+      footer {
+        position: absolute;
+        margin-top: 30px;
+        background-color: #ddd;
+        padding: 6px;
+        width: 70%;
+        left: 200px;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+      }
+      li {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      a {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+      }
+      span {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link">Features</a>
+        <a class="nav-link">How It Works</a>
+        <a class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <div id="main">
+      <form id="form">
+        <p id="handcrafted">Handcrafted, home-made masterpieces</p>
+        <br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+        /><br />
+        <input type="submit" id="submit" value="GET STARTED" />
+      </form>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/product.png" />
+        <div class="desc">
+          <h2>Premium Materials</h2>
+          <p class="grid-content">
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/free-shipping.png" />
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p class="grid-content">
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/good-quality.png" />
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p class="grid-content">
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div align="center">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div id="pricing">
+      <div class="price-content">
+        <h3>TENOR TROMBONE</h3>
+        <p class="dolar">$600</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button class="select">SELECT</button>
+      </div>
+      <div class="price-content">
+        <h3>BASS TROMBONE</h3>
+        <p class="dolar">$900</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button class="select">SELECT</button>
+      </div>
+      <div class="price-content">
+        <h3>VALVE TROMBONE</h3>
+        <p class="dolar">$1200</p>
+        <p>Plays similar to a Trumpet</p>
+        <p>Great for Jazz Bands</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <button class="select">SELECT</button>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2016, Original Trombones</span>
+    </footer>
+  </body>
+</html>
