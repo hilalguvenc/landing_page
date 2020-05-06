@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Landing Page</title>
     <style>
       #header {
@@ -146,6 +147,148 @@
         flex-direction: row;
         justify-content: flex-end;
       }
+      @media (max-width: 767px){
+        #header {
+        display: flex;
+        flex-direction: row;
+      }
+        #header-img {
+        width: 140px;
+        height: 21px;
+        position: fixed;
+      }
+      #nav-bar {
+        position: fixed;
+        right: 0;
+        font-size: 13px;
+      }
+      .nav-link {
+        margin: 2px;
+      }
+      #main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        margin:30px;
+      }
+      label {
+        font-weight: bold;
+        font-style: Times New Roman;
+      }
+      #handcrafted {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      #email {
+        padding: 4px;
+        margin: 0;
+        width: 100%;
+      }
+      #submit {
+        padding: 5px;
+        margin: 10px;
+        width: 50%;
+        font-weight: bold;
+        background-color: #f5f10b;
+        border-color: none;
+      }
+      .grid {
+        display: flex;
+        flex-direction: column;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        padding: 30px;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size:16px;
+      }
+      .grid-content {
+        font-size: 13px;
+        margin: 0;
+      }
+      iframe {
+        margin: 50px;
+      }
+      #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .price-content {
+        padding: 0;
+        margin: 40px;
+        border: 1px outset #2a1613;
+        width: 260px;
+        text-align: center;
+        height: 320px;
+        font-size: 15px;
+      }
+      .dolar {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .select {
+        border: 1px outset #f5f10b;
+        background-color: #f5f10b;
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
+      }
+      h3 {
+        border: 1px outset #cdc6c5;
+        background-color: #cdc6c5;
+        padding: 13px;
+        margin: 0;
+      }
+      footer {
+        position: absolute;
+        margin-top: 30px;
+        background-color: #ddd;
+        padding: 6px;
+        width: 70%;
+        left: 200px;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+      }
+      li {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      a {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+      }
+      span {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+  }
     </style>
   </head>
   <body>
