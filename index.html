@@ -13,17 +13,22 @@
         height: 26px;
         padding: 1px;
         padding-right: 650px;
+        position: fixed;
         left: 0;
+        top: 18px;
       }
       #nav-bar {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         font-size: 20px;
         right: 0;
+        z-index: 10;
       }
       .nav-link {
-        padding-right: 60px;
+        margin: 10px;
       }
       #main {
         display: flex;
@@ -33,6 +38,10 @@
       }
       #form {
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
       label {
         font-size: 25px;
@@ -56,7 +65,7 @@
         padding: 10px;
         margin: 10px;
         width: 25%;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         background-color: #f5f10b;
         border-color: none;
@@ -154,39 +163,56 @@
         flex-direction: row;
         justify-content: flex-end;
       }
-      @media (max-width: 767px) {
+      @media (max-width: 600px) {
         body {
           max-width: 100%;
           overflow-x: hidden;
+          background-color: #eee;
+        }
+        header {
+          position: fixed;
+          height: 20vh;
+          font-size: 16px;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: #eee;
         }
         #header-img {
-          width: 130px;
-          height: 20px;
-          padding: 3px;
-          margin-right: 48px;
+          display: flex;
+          justify-content: center;
+          max-width: 300px;
+          width: 100%;
         }
         #nav-bar {
-          display: flex;
-          flex-direction: row;
-          font-size: 10px;
           position: fixed;
+          top: 0;
+          margin-top: 7px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding-top: 50px;
         }
         .nav-link {
-          margin: 4px;
+          text-align: center;
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
         }
         #main {
           display: flex;
           flex-direction: column;
-          padding: 35px;
-          margin: 20px;
+          justify-content: center;
         }
         label {
           font-weight: bold;
           font-style: Times New Roman;
         }
         #handcrafted {
+          margin-top: 100px;
           font-weight: bold;
-          font-size: 17px;
+          font-size: 21px;
           padding: 2px;
         }
         #email {
@@ -317,7 +343,7 @@
         <a class="nav-link">Pricing</a>
       </nav>
     </header>
-    <div id="main">
+    <section id="main">
       <form id="form">
         <p id="handcrafted">Handcrafted, home-made masterpieces</p>
         <br />
@@ -328,7 +354,7 @@
         /><br />
         <input type="submit" id="submit" value="GET STARTED" />
       </form>
-    </div>
+    </section>
     <div class="grid">
       <div class="icon">
         <img src="https://img.icons8.com/color/48/000000/product.png" />
